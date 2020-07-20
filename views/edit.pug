@@ -1,0 +1,9 @@
+extends base
+include _reviewPublish2          
+
+block content
+    section.section-review
+        //- img.header__hero-img(src=`/img/tours/${tour.imageCover}`, id='back-review' alt=`${tour.name}`)
+        .review-title-div
+            h2.heading-secondary.ma-bt-lg(id='my-header')= `Tell us about your experience!`
+        +reviewPublish(`${review._id}`)
